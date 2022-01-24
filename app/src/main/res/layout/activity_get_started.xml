@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".GetStartedActivity">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="WELCOME TO"
+        android:textColor="@color/txtColor"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="327dp"
+        android:layout_height="210dp"
+        android:layout_below="@+id/tvWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="Group Attendance Roll Call"
+        android:textAlignment="center"
+        android:textColor="@color/reddish"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAppName"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="100dp"
+        android:padding="10dp"
+        android:text="Get Started"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp" />
+
+</RelativeLayout>

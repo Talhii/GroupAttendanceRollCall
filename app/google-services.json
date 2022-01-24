@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "689955365399",
+    "project_id": "groupattendancerollcall",
+    "storage_bucket": "groupattendancerollcall.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689955365399:android:ca821816cd6a8c5217b252",
+        "android_client_info": {
+          "package_name": "com.example.groupattendancerollcall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689955365399-a8kn3am38k3u087qpnpibebr5qp8jjlb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAya1cbwVcamIOhLgn70_KxR8CQXHlGMfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689955365399-a8kn3am38k3u087qpnpibebr5qp8jjlb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

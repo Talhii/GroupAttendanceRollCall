@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical"
+    tools:context=".AdminSignIn">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Admin Log In"
+        android:textColor="#2196F3"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etAdminEmail"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/fields"
+        android:padding="10dp"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/etAdminPassword"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Pin"
+        android:inputType="numberPassword"
+
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/fields"
+        android:padding="10dp"
+        android:textSize="15sp"
+        />
+
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:ellipsize="start"
+        android:foregroundGravity="top"
+        android:text="Sign in"
+        android:textAllCaps="false"
+
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        />
+
+
+</LinearLayout>

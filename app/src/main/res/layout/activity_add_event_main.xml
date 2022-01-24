@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEventMainActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/btnBackground"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrow"
+            android:backgroundTint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:text="Add Event"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutHeader">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvEventType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:text="Event Type"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvEventType"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fields"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvNote"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:text="You must first add the Event Type in Event Type list. To add, Goto MainMenu or Home and tap the Event Type List"
+                android:textColor="@color/reddish"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFromDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvNote"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:text="From Date Time"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etFromDate"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFromDateTime"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fields"
+                android:hint="Tap here to select date"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/etFromTime"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etFromDate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fields"
+                android:hint="Tap here to select time"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvToDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etFromTime"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:text="To Date Time"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etToDate"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvToDateTime"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fields"
+                android:hint="Tap here to select date"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/etToTime"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etToDate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fields"
+                android:hint="Tap here to select time"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etToTime"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:text="Description"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDescription"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fields"
+                android:gravity="top"
+                android:hint="Up to 1000 characters long"
+                android:inputType="textMultiLine"
+                android:minLines="4"
+                android:padding="10dp"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnDone"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etDescription"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:padding="5dp"
+                android:text="Done"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/btnEventAttendeeList"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnDone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:padding="5dp"
+                android:text="Event Attendee List"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

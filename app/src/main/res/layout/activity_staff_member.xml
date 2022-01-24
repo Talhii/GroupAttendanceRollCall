@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StaffMember">
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/btnBackground"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attendance Roll Call"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEvents"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:padding="5dp"
+        android:text="Events"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+
+
+    <Button
+        android:id="@+id/btnEventTypeList"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEvents"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:text="Event Type List"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+
+    <Button
+        android:id="@+id/btnAttendeeList"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEventTypeList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:text="Attendee List"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+
+    <Button
+        android:id="@+id/btnHelp"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAttendeeList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:text="Help &amp; Info"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+</RelativeLayout>
